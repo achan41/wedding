@@ -101,6 +101,11 @@
   src: url("../assets/fonts/La\ Graziela.ttf");
 }
 
+@font-face {
+  font-family: "ModernSans";
+  src: url("../assets/fonts/ModernSans.ttf");
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -155,14 +160,19 @@ h1,
 
 h2,
 .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: 2vw;
+}
+
+sh2,
+.sh2 {
+  font-size: 2vw;
 }
 
 @media (min-width: 1200px) {
 
   h2,
   .h2 {
-    font-size: 2rem;
+    font-size: 2vw;
   }
 }
 
@@ -194,7 +204,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 6rem;
+  font-size: 6vw;
 }
 
 h6,
@@ -659,6 +669,33 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.gradient-bottom {
+  --mask: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+  font: 2vw/1.6vw Arial;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.gradient-top {
+  --mask: linear-gradient(to top,
+      rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 0) 99%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+  font: 2vw/1.6vw Arial;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.gradient-top-black {
+  --mask: linear-gradient(to top,
+      rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 0) 99%, rgba(187, 40, 40, 0) 0) 100% 50% / 100% 100% repeat-x;
+  font: 2em/1.6em Arial;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
 
 .img-thumbnail {
@@ -7881,11 +7918,13 @@ fieldset:disabled .btn {
 
 .link-white {
   color: #fff !important;
+  text-decoration: none;
 }
 
 .link-white:hover,
 .link-white:focus {
   color: white !important;
+  text-decoration: none;
 }
 
 .ratio {
@@ -8754,7 +8793,7 @@ fieldset:disabled .btn {
 }
 
 .mt-2 {
-  margin-top: 0.5rem !important;
+  margin-top: 0.5vw !important;
 }
 
 .mt-3 {
@@ -8823,6 +8862,10 @@ fieldset:disabled .btn {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 6rem !important;
 }
 
 .mb-auto {
@@ -9166,6 +9209,31 @@ fieldset:disabled .btn {
   text-align: center !important;
 }
 
+.overlay-container {
+  display: flex;
+  /* required */
+  flex-flow: row nowrap;
+  /* required */
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  /* required */
+  flex: none;
+  /* required */
+}
+
+.overlay-container .foreground {
+  position: absolute;
+  /* required */
+  left: 0;
+  right: 0;
+  bottom: 25%;
+  margin-inline: auto;
+  width: 100%;
+}
+
 .text-center {
   text-align: center !important;
 }
@@ -9284,6 +9352,12 @@ fieldset:disabled .btn {
   font-style: normal;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.clickable-font {
+  font-family: "ModernSans";
+  line-height: 1.2;
+  color: rgba(47, 48, 47, 0.5) !important;
 }
 
 .text-reset {
@@ -12970,7 +13044,7 @@ body {
 
   .masthead h1,
   .masthead .h1 {
-    font-size: 6.5rem;
+    font-size: 7vw;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
@@ -12978,7 +13052,7 @@ body {
   .masthead h2,
   .masthead .h2 {
     max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 1.3vw;
   }
 }
 
@@ -13015,26 +13089,6 @@ body {
   .projects-section .project-text {
     padding: 5rem;
   }
-}
-
-.rsvp-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-.rsvp-section .form-rsvp input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
 }
 
 .contact-section {
