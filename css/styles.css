@@ -673,8 +673,8 @@ progress {
 
 .gradient-bottom {
   --mask: linear-gradient(to bottom,
-      rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 75%,
-      rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+      rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
   font: 2vw/1.6vw Arial;
   -webkit-mask: var(--mask);
   mask: var(--mask);
@@ -682,8 +682,8 @@ progress {
 
 .gradient-top {
   --mask: linear-gradient(to top,
-      rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 75%,
-      rgba(0, 0, 0, 0) 99%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+      rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
   font: 2vw/1.6vw Arial;
   -webkit-mask: var(--mask);
   mask: var(--mask);
@@ -691,7 +691,7 @@ progress {
 
 .gradient-top-black {
   --mask: linear-gradient(to top,
-      rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 1) 75%,
       rgba(0, 0, 0, 0) 99%, rgba(187, 40, 40, 0) 0) 100% 50% / 100% 100% repeat-x;
   font: 2em/1.6em Arial;
   -webkit-mask: var(--mask);
