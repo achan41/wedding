@@ -168,6 +168,11 @@ sh2,
   font-size: 2vw;
 }
 
+sh3,
+.sh3 {
+  font-size: 1.5vw;
+}
+
 @media (min-width: 1200px) {
 
   h2,
@@ -9232,6 +9237,26 @@ fieldset:disabled .btn {
   bottom: 25%;
   margin-inline: auto;
   width: 100%;
+}
+
+.overlay-container .foreground-registry {
+  position: absolute;
+  /* required */
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.text-right {
+  padding-right: 9.5vw;
+  text-align: right !important;
+}
+
+.text-right-hotel {
+  padding-right: 8.5vw;
+  text-align: right !important;
 }
 
 .text-center {
