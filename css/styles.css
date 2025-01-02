@@ -9357,7 +9357,7 @@ fieldset:disabled .btn {
 .clickable-font {
   font-family: "ModernSans";
   line-height: 1.2;
-  color: rgba(47, 48, 47, 0.5) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .text-reset {
